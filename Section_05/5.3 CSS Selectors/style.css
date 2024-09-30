@@ -1,3 +1,27 @@
+body{
+  text-align: center;
+}
+
+.note{
+  color:red
+}
+
+li[value="2"]{
+  color:black
+}
+
+li[value="3"]{
+  color:green
+}
+
+li[value="4"]{
+  color:blue
+}
+
+li[value="5"]{
+  color: black;
+}
+
 ol {
   margin-left: -40px;
   margin-top: -20px;
