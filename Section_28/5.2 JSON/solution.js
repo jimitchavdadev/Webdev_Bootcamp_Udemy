@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 let data;
 
 app.get("/", (req, res) => {
-  res.render("solution.ejs", { recipe: data });
+  res.render("/home/rebel/Roger/Training/Webdev_Bootcamp_Udemy/Section_28/5.2 JSON/views/solution.ejs", { recipe: data });
 });
 
 app.post("/recipe", (req, res) => {

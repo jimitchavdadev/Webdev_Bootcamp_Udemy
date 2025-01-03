@@ -12,12 +12,17 @@
   <style>
     .container {
       color: white;
-      border: 5px solid gold;
+      border: 5px solid gold; 
       display: flex;
+      flex-direction: column  ; 
+      width: 50px;
+    }
+    .container > *{
+      flex-basis: 100px;
     }
 
     /*
-Select all the elements that are the direct
+Select all the ele  ments that are the direct
 children of the .container class.
     */
 

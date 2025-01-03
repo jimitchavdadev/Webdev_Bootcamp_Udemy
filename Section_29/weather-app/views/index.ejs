@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <form method="GET" action="/">
+            <input type="text" name="location" placeholder="Enter city name" value="<%= location %>">
+            <button type="submit">Get Weather</button>
+        </form>
+        
+        <% if (location) { %>
+            <h2>Weather in <%= location %></h2>
+            <p>Temperature: <%= temperature %>°C</p>
+            <p>Description: <%= description %></p>
+            <h3><%= willRain ? 'It will rain tomorrow!' : 'No rain tomorrow.' %></h3>
+        <% } %>
+    </div>
+</body>
+</html>

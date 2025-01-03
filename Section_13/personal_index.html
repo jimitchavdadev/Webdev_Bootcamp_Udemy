@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #ffffff;
+            background: linear-gradient(120deg, #1b1b2f, #3a1c71, #731c23);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header.hero {
+            background: radial-gradient(circle, #3a1c71, #731c23, #1b1b2f);
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header.hero h1 {
+            font-size: 3rem;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px #000000;
+        }
+
+        header.hero p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            color: #dcdcdc;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(58, 28, 113, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #e94560;
+        }
+
+        main {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: rgba(114, 28, 35, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #e94560;
+        }
+
+        section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #c74b50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #e94560;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #3a1c71;
+            color: #ffffff;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>Welcome to [Your Name]'s Portfolio</h1>
+        <p>Your brief introduction goes here.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>Write about your background, hobbies, and interests here.</p>
+        </section>
+
+        <section id="resume" class="resume">
+            <h2>Resume</h2>
+            <h3>Education</h3>
+            <ul>
+                <li>[Your Education Details]</li>
+            </ul>
+            <h3>Work Experience</h3>
+            <ul>
+                <li>[Your Work Experience]</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul>
+                <li>[Your Skills]</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Project 1:</strong> Description</li>
+                <li><strong>Project 2:</strong> Description</li>
+                <li><strong>Project 3:</strong> Description</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+</body>
+</html>

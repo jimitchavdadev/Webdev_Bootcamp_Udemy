@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
     adv = "it's time to have some fun";
   }
 
-  res.render("solution.ejs", {
+  res.render("/home/rebel/Roger/Training/Webdev_Bootcamp_Udemy/Section_25/4.0 EJS/views/solution.ejs", {
     dayType: type,
     advice: adv,
   });

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Review</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Books I've Read</h1>
+  
+  <!-- Add Book Form -->
+  <form action="/books" method="POST">
+    <input type="text" name="title" placeholder="Book Title" required>
+    <input type="text" name="author" placeholder="Author">
+    <input type="text" name="cover_url" placeholder="Cover Image URL">
+    <textarea name="review" placeholder="Review" required></textarea>
+    <input type="number" name="rating" min="1" max="5" placeholder="Rating (1-5)" required>
+    <input type="date" name="read_date" required>
+    <button type="submit">Add Book</button>
+  </form>
+
+  <!-- Book List -->
+  <ul>
+    <% books.forEach(book => { %>
+      <li>
+        <img src="<%= book.cover_url %>" alt="<%= book.title %> cover" />
+        <div>
+          <h3><%= book.title %></h3>
+          <p><strong>Author:</strong> <%= book.author %></p>
+          <p><strong>Review:</strong> <%= book.review %></p>
+          <p><strong>Rating:</strong> <%= book.rating %> / 5</p>
+          <p><strong>Read on:</strong> <%= book.read_date %></p>
+          <a href="/books/<%= book.id %>/edit">Edit</a>
+          <form action="/books/<%= book.id %>" method="POST" style="display:inline;">
+            <button type="submit">Delete</button>
+          </form>
+        </div>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
